@@ -1,0 +1,72 @@
+/* General styles for the entire page */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Set the font family for the body */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f8ff; /* Set a light blue background color */
+    color: #333; /* Set a dark gray color for text */
+}
+
+/* Styles for the navigation menu */
+nav {
+    background-color: #1abc9c; /* Set a teal background color */
+    padding: 15px 30px; /* Add padding inside the navigation bar */
+    text-align: center; /* Center the text inside the navigation bar */
+}
+
+/* Styles for the links inside the navigation menu */
+nav a {
+    margin: 0 15px; /* Add margin on the left and right of each link */
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set link text color to white */
+    font-weight: bold; /* Make the link text bold */
+}
+
+/* Container for the header */
+.header-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto 1fr; /* Two columns: auto for image, 1fr for heading */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px; /* Add padding around the container */
+    justify-items: center; /* Center items in the cell */
+}
+
+/* Styles for the profile image */
+.profile-img {
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the main heading */
+h1 {
+    margin: 0 20px; /* Add margin to the left and right */
+    color: #333; /* Set the heading text color to dark gray */
+    align-items: center;
+}
+
+/* Styles for sections */
+section {
+    padding: 20px; /* Add padding inside each section */
+    margin: 20px auto; /* Add margin to the top and bottom, and center the section horizontally */
+    max-width: 800px; /* Set a maximum width for the sections */
+    background-color: #fff; /* Set a white background color */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styles for unordered lists */
+ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styles for list items */
+li {
+    margin-bottom: 10px; /* Add margin to the bottom of each list item */
+}
