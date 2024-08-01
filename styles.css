@@ -23,13 +23,15 @@ nav a {
 }
 
 /* Container for the header */
-.header-container {
+header {
     display: grid; /* Use grid layout */
-    grid-template-columns: auto 1fr; /* Two columns: auto for image, 1fr for heading */
+    grid-template-columns: 150px 1fr; /* Fixed width for image, flexible for heading */
     align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; /* Space between items */
     padding: 20px; /* Add padding around the container */
-    justify-items: center; /* Center items in the cell */
+    text-align: center; /* Center text within the grid cells */
+    background-color: #1abc9c; /* Set a teal background color */
+    border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
 }
 
 /* Styles for the profile image */
@@ -102,4 +104,10 @@ footer{
     padding: 20px;
     text-align: center;
     text-decoration: wavy;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: auto;
 }
