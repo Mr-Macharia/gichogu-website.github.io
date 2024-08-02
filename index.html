@@ -2,83 +2,168 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="home - Template">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean Wathoni - Full Stack Developer</title>
+    <title>Gichogu Macharia - Data Scientist | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header" style="text-align: center; margin-bottom: 20px;">
-            <img src="img (1).jpg" alt="Jean Wathoni" style="max-width: 150px; border-radius: 50%; filter: grayscale(100%) contrast(200%) brightness(150%); mix-blend-mode: multiply;">
-            <h1>Jean Wathoni</h1>
-            <h2>Full Stack Developer</h2>
-            <p>Passionate about creating impactful digital experiences, I am a Full Stack Developer with over 1 year of experience in developing and deploying web applications. My journey in tech started with a fascination for problem-solving and an insatiable curiosity about how things work. Today, I specialize in building scalable, high-performance applications using the latest technologies.</p>
-        </div>
-
-        <div class="section">
-            <h2>Technical Skills</h2>
+    <header>
+        <div class="logo">GM</div>
+        <nav>
             <ul>
-                <li>Front-end: HTML, CSS, JavaScript</li>
-                <li>Back-end: Node.js, Django</li>
-                <li>Databases: MySQL</li>
-                <li>Tools & Platforms: Git</li>
+                <li><a href="#works" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <div class="section">
-            <h2>Non-Technical Skills</h2>
-            <ul>
-                <li>Creativity</li>
-                <li>Adaptability</li>
-                <li>Time management</li>
-                <li>Emotional Intelligence</li>
-                <li>Cooperation</li>
-                <li>Communication skills</li>
-                <li>Organisation</li>
-                <li>Prioritisation</li>
-                <li>Enthusiasm</li>
-            </ul>
-        </div>
+    <main>
+        <section id="headline">
+            <div class="profile-image-container">
+                <img src="profile.png" alt="Gichogu Macharia" class="profile-image">
+            </div>
+            <div class="headline-container">
+                <h1 class="headline-title">Gichogu Macharia</h1>
+                <p class="poppins">
+                    Hello! I'm Gichogu Macharia, a passionate Data Scientist and Software Engineer dedicated to turning data into actionable insights and creating robust software solutions. With a strong foundation in data analysis, machine learning, and software development, I thrive on solving complex problems and driving innovation.
+                </p>
+            <div class="headline-container">
+                <h1 class="headline-title">My Journey</h1>
+                <p class="poppins">
+                    My journey in the tech world began with a curiosity for how data can shape decisions and the power of technology to transform industries. Over the years, I've honed my skills in data analytics, statistical modeling, and software engineering, allowing me to tackle a diverse range of projects. From building predictive models to designing user-friendly applications, my work is driven by a commitment to excellence and a desire to make a meaningful impact.
+                </p>
+                <a href="#works" class="btnBlue">See My Projects</a>
+            </div>
+    
+        </section>
+            
+        <section id="works">
+            <h2 class="playfair">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="Microsoft.webp" alt="Microsoft Movie Analysis" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Microsoft Movie Analysis</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Python</li>
+                            <li class="tech-item">Pandas</li>
+                        </ul>
+                        <a href="https://github.com/Mr-Macharia/Microsoft_project.git" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="Movie.jpg" alt="Project 2 Name" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Movie Prediction</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Python</li>
+                            <li class="tech-item">Pandas</li>
+                            <li class="tech-item">Machine Learning</li>
+                        </ul>
+                        <a href="https://github.com/Mr-Macharia/Movie-Recommendation-System.git" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div class="project">
+                    <img src="Wind.png" alt="Project 3 Name" class="project-image">
+                    <div class="project-description">
+                        <h3 class="project-title">Kenyan Wind Farm optimization</h3>
+                        <ul class="tech-container">
+                            <li class="tech-item">Python</li>
+                            <li class="tech-item">Machine Learning</li>
+                            <li class="tech-item">Pandas</li>
+                        </ul>
+                        <a href="https://github.com/Mr-Macharia/Kenya-Wind-Farm-Optimization.git" class="btnBlue seeProjBtn">See Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="section">
-            <h2>Content Creator</h2>
-            <ul>
-                <li>Created marketing collateral including brochures, posters, and social media graphics</li>
-                <li>Collaborated with clients to understand their vision and translated it into impactful visual content</li>
-            </ul>
-        </div>
+        <section id="about">
+            <div>
+                <h2 class="playfair">About Me</h2>
+                <p class="poppins">Full Stack Developer with a background in communications and business. I combine technical expertise with creative problem-solving to deliver impactful digital solutions.</p>
+                <a href="Mr.Macharia CV (1).pdf" class="btnBlue getCV">Get My CV <span class="download"></span></a>
+            </div>
+            <div class="tech-cards-container">
+                <div class="tech-card langs">
+                    <h3>Languages</h3>
+                    <ul class="tech">
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="tech-card frames">
+                    <h3>Frameworks</h3>
+                    <ul class="tech">
+                        <li>Node.js</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="tech-card skills">
+                    <h3>Skills</h3>
+                    <ul class="tech">
+                        <li>Git</li>
+                        <li>MySQL</li>
+                        <li>Machine Learning</li>
+                        <li>Design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor of Arts Communications, Daystar University (2001 - 2005)</li>
-                <li>Masters in Business Administration, University of Nairobi (2007 - 2014)</li>
-            </ul>
-        </div>
+        <section id="contact">
+            <h2 class="playfair">Contact Me</h2>
+            <p class="poppins">If you have an application you are interested in developing, data that you need to gain insights, a feature that you need built or a project that needs coding, I'd love to help with it!</p>
+            <form>
+                <div class="input-container">
+                    <label for="name">Full name <abbr title="required">*</abbr></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email <abbr title="required">*</abbr></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <label for="message" class="msgLbl">Message <abbr title="required">*</abbr></label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btnBlue">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Proficient in Adobe Photoshop, Illustrator, InDesign, and After Effects</li>
-                <li>Ability to work collaboratively in a team environment</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Portfolio Highlights</h2>
-            <ul>
-                <li>Website creation on SDG10</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <ul>
-                <li>Email: jeanwathoni@gmail.com</li>
-                <li>Website: <a href="http://www.jeanwathoni.portfolio.com">www.jeanwathoni.portfolio.com</a></li>
-                <li>Github: <a href="http://github.com/ENJSONI">ENJSONI</a> (jeanwathoni@gmail.com)</li>
-            </ul>
-        </div>
-    </div>
+    <footer>
+        <a href="mailto:gichogumacharia001@gmail.com" class="open">gichogumacharia001@gmail.com</a>
+        <div class="wrapper">
+            
+            <div class="icon twitter">
+               <div class="tooltip">
+                  Twitter
+               </div>
+               <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon instagram">
+               <div class="tooltip">
+                  Instagram
+               </div>
+               <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon github">
+               <div class="tooltip">
+                  Github
+               </div>
+               <span><i class="fab fa-github"></i></span>
+            </div>
+            </div>
+         </div>
+    </footer>
 </body>
 </html>
