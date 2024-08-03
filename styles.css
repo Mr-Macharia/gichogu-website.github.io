@@ -1,9 +1,14 @@
 :root {
-    --white: #fff;
-    --gray: #7d7c84;
-    --blue: #1a2236;
+    --background: #fff;
+    --text: #1a2236;
     --border: #98dede;
     --input: #dfdfe0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
@@ -32,6 +37,19 @@ header {
     padding: 1rem 2rem;
     background-color: var(--white);
     border-bottom: 1px solid #e5e5e5;
+}
+header {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+    color: var(--text);
+}
+
+.btnBlue {
+    background-color: var(--text);
+    color: var(--background);
 }
 
 .logo {
@@ -96,10 +114,11 @@ nav ul li {
 }
 
 .profile-image {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
     border: none;
+    margin-left: 150px;
 }
 
 #works, #about, #contact {
@@ -348,4 +367,190 @@ html,body{
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
   background: #DE463B;
+}
+
+
+header.dark-mode,
+footer.dark-mode {
+    background-color: #333;
+}
+
+nav ul li a.dark-mode {
+    color: #e5e5e5;
+}
+
+.btnBlue.dark-mode {
+    background-color: #444;
+    color: #e5e5e5;
+}
+
+.btnBlue.dark-mode:hover {
+    background-color: #666;
+}
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #1a2236;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #98dede;
+    color: #1a2236;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #98dede;
+    color: #1a2236;
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background-color: #fff;
+}
+
+
+body.dark-mode header {
+    background-color: #2c3e50;
+    border-bottom: 1px solid #34495e;
+}
+
+body.dark-mode .nav-link {
+    color: #ecf0f1;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #98dede;
+}
+
+body.dark-mode .btnBlue {
+    background-color: #98dede;
+    color: #1a2236;
+}
+
+body.dark-mode .btnBlue:hover {
+    background-color: #7d7c84;
+}
+
+body.dark-mode .project-description {
+    background-color: rgba(236, 240, 241, 0.9);
+    color: #1a2236;
+}
+
+body.dark-mode footer {
+    background-color: #2c3e50;
+}
+
+body.dark-mode .open {
+    color: #98dede;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #34495e;
+}
+
+body.dark-mode .tech-card {
+    background-color: #2c3e50;
+}
+
+body.dark-mode .tech-item {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+/* Add these styles to your existing CSS */
+
+body {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Update other dark mode styles as needed */
+body.dark-mode header {
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+}
+
+body.dark-mode .nav-link {
+    color: var(--text);
+}
+
+body.dark-mode .nav-link:hover {
+    color: #98dede;
+}
+
+body.dark-mode .btnBlue {
+    background-color: var(--border);
+    color: var(--background);
+}
+
+body.dark-mode .btnBlue:hover {
+    background-color: #7d7c84;
+}
+
+body.dark-mode .project-description {
+    background-color: rgba(236, 240, 241, 0.9);
+    color: #1a2236;
+}
+
+body.dark-mode footer {
+    background-color: #2c3e50;
+}
+
+body.dark-mode .open {
+    color: #98dede;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #34495e;
+}
+
+body.dark-mode .tech-card {
+    background-color: #2c3e50;
+}
+
+body.dark-mode .tech-item {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #1a2236;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #98dede;
+    color: #1a2236;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #98dede;
+    color: #1a2236;
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background-color: #fff;
 }
