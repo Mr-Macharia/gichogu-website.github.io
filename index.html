@@ -1,14 +1,28 @@
+<!-- 
+    Document: Personal Portfolio Website
+    Author: PLP Group 59
+    Description: A personal portfolio website showcasing my projects, skills, and experience as a Data Scientist and Software Engineer.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 
+        Meta tags for character encoding and viewport settings.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        Page title and links to external stylesheets.
+    -->
     <title>Gichogu Macharia - Data Scientist | Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- 
+        Header section with navigation menu and dark mode toggle button.
+    -->
     <header>
         <button id="darkModeToggle">Toggle Dark Mode</button>
 
@@ -21,11 +35,16 @@
             </ul>
         </nav>
     </header>
-
+    <!-- 
+        Main content section with headline, projects, about, and contact sections.
+    -->
     <main>
+        <!-- 
+            Headline section with profile image and introductory text.
+        -->
         <section id="headline">
             <div class="profile-image-container">
-                <img src="profile.png" alt="Gichogu Macharia" class="profile-image">
+                <img src="resources/profile.png" alt="Gichogu Macharia" class="profile-image">
             </div>
             <div class="headline-container">
                 <h1 class="headline-title"></h1>
@@ -41,13 +60,15 @@
                 </div>
             </div>
         </section>
-            
+          <!-- 
+            Projects section with grid layout and project cards.
+        -->   
         <section id="works">
             <h2 class="playfair">Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project">
-                    <img src="Microsoft.webp" alt="Microsoft Movie Analysis" class="project-image">
+                    <img src="resources/Microsoft.webp" alt="Microsoft Movie Analysis" class="project-image">
                     <div class="project-description">
                         <h3 class="project-title">Microsoft Movie Analysis</h3>
                         <ul class="tech-container">
@@ -60,7 +81,7 @@
         
                 <!-- Project 2 -->
                 <div class="project">
-                    <img src="Movie.jpg" alt="Project 2 Name" class="project-image">
+                    <img src="resources/Movie.jpg" alt="Project 2 Name" class="project-image">
                     <div class="project-description">
                         <h3 class="project-title">Movie Prediction</h3>
                         <ul class="tech-container">
@@ -74,7 +95,7 @@
         
                 <!-- Project 3 -->
                 <div class="project">
-                    <img src="Wind.png" alt="Project 3 Name" class="project-image">
+                    <img src="resources/Wind.png" alt="Project 3 Name" class="project-image">
                     <div class="project-description">
                         <h3 class="project-title">Kenyan Wind Farm optimization</h3>
                         <ul class="tech-container">
@@ -92,7 +113,7 @@
             <div>
                 <h2 class="playfair">About Me</h2>
                 <p class="poppins">Full Stack Developer with a background in communications and business. I combine technical expertise with creative problem-solving to deliver impactful digital solutions.</p>
-                <a href="Mr.Macharia CV (1).pdf" class="btnBlue getCV">Get My CV <span class="download"></span></a>
+                <a href="resources/Mr.Macharia CV (1).pdf" class="btnBlue getCV">Get My CV <span class="download"></span></a>
             </div>
             <div class="tech-cards-container">
                 <div class="tech-card langs">
@@ -122,7 +143,9 @@
                 </div>
             </div>
         </section>
-
+        <!-- 
+            Contact information section to reach clients
+        -->
         <section id="contact">
             <h2 class="playfair">Contact Me</h2>
             <p class="poppins">If you have an application you are interested in developing, data that you need to gain insights, a feature that you need built or a project that needs coding, I'd love to help with it!</p>
@@ -141,29 +164,30 @@
             </form>
         </section>
     </main>
-
+    <!-- 
+        Social Media pages including email, facebook, twitter, instagram and github
+    -->
     <footer>
         <a href="mailto:gichogumacharia001@gmail.com" class="open">gichogumacharia001@gmail.com</a>
         <div class="wrapper">
+            <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fab fa-facebook-f"></i></span>
+            </div>
             <div class="icon twitter">
-                <div class="tooltip">
-                    Twitter
-                </div>
-                <span><i class="fab fa-twitter"></i></span>
+                <div class="tooltip">Twitter</div>
+                <span><a href="https://twitter.com/your_profile"><i class="fab fa-twitter"></i></a></span>
             </div>
             <div class="icon instagram">
-                <div class="tooltip">
-                    Instagram
-                </div>
-                <span><i class="fab fa-instagram"></i></span>
+                <div class="tooltip">Instagram</div>
+                <span><a href="https://instagram.com/gich.o.g.u"><i class="fab fa-instagram"></i></a></span>
             </div>
             <div class="icon github">
-                <div class="tooltip">
-                    Github
-                </div>
-                <span><i class="fab fa-github"></i></span>
+                <div class="tooltip">Github</div>
+                <span><a href="https://github.com/Mr-Macharia"><i class="fab fa-github"></i></a></span>
             </div>
         </div>
+        
     </footer>
     <script src="scripts.js"></script>
 </body>
